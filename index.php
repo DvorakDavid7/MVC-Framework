@@ -1,7 +1,6 @@
 <?php
 
-require __DIR__ . "/core/Application.php";
-
+require __DIR__ . "/core/Application.php" ;
 
 $app = new Application();
 
