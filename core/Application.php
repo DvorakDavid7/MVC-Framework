@@ -22,6 +22,7 @@ class Application
         $callback = $this->router->register[$method][$path] ?? false;
         if (!$callback) {
             echo "Not found";
+            http_response_code(404);
             exit();
         }
         echo $callback();
